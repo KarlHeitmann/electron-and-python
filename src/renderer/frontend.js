@@ -1,16 +1,29 @@
+/*
 import url from 'url'
 import path from 'path'
 import applyFilter from './filters'
 import { setIpc, sendIpc } from './ipcRendererEvents'
+*/
+
+
 
 window.addEventListener('load', () => {
   console.log('VA a mandar IPC')
+  botonClick()
+  /*
   setIpc()
   addImagesEvents()
   searchImagesEvent()
   selectEvent()
   openDirectory()
+  */
 })
+function addClickEvent() {
+  console.log("Event clicked")
+}
+function botonClick() {
+  console.log("Clicked!")
+}
 
 function openDirectory() {
   const openDirectory = document.getElementById('openDirectory')
