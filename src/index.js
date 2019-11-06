@@ -34,9 +34,12 @@ app.on('ready', () => {
     win = null
     app.quit()
   })
-
-  win.loadURL('https://devdocs.io')
-  // win.loadURL(`file://${__dirname}/renderer/index.html`)
+  const cargar = `file://${__dirname}/renderer/index.html`
+  // const cargar = `https://devdocs.io`
+  console.log(cargar)
+  console.log("HOLA")
+  // win.loadURL('')
+  win.loadURL(cargar)
 })
 
 ipcMain.on('ping', (event, arg) => {
