@@ -32,7 +32,7 @@ function botonClick() {
   console.log("Clicked!")
   var spawn = require("child_process").spawn
   console.log("1")
-  var process = spawn('python', ["./hola_mundo.py",
+  var process = spawn('python', ["/home/karl/workspace/ocular/experimentos/node_python/myway/forma1/src/renderer/hola_mundo.py",
     ""
   ]);
   console.log("2")
@@ -45,7 +45,8 @@ function botonClick() {
   ]);
   */
   process.stdout.on('data', function (data) {
-    res.send(data.toString());
+    console.log(data.toString())
+    // res.send(data.toString());
   });
 }
 
